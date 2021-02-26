@@ -14,6 +14,15 @@ yargs.command({
     }
 })
 
+// Create remove command
+yargs.command({
+    command: 'remove',
+    describe: 'Remove a note',
+    handler: function() {
+        console.log("Removing the note!");
+    }
+})
+
 // add, remove, read, list
 
 console.log(yargs.argv);
